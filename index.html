@@ -100,7 +100,7 @@
     <!-- Navigation -->
     <nav class="floating-nav w-[90%] max-w-5xl glass border border-white/10 transition-all duration-300" id="navbar">
         <div class="flex items-center gap-3">
-            <img src="assets/images/easysafe_bi_logo_w.png" alt="EASY SAFE Logo" class="h-8 drop-shadow-sm">
+            <img src="assets/images/easysafe_bi_logo.png" alt="EASY SAFE Logo" class="h-8 drop-shadow-sm">
         </div>
         <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
             <a href="#features" class="hover:text-white transition-colors">스마트 도구</a>
@@ -186,7 +186,7 @@
 
     <!-- Features Section (Smart Tools) -->
     <section id="features" class="w-full py-32 relative border-y border-white/5 bg-cover bg-center bg-fixed"
-        style="background-image: url('assets/images/mobile_app.png');">
+        style="background-image: url('assets/images/mobile_app3.png');">
         <!-- Dark overlay to ensure text readability -->
         <div class="absolute inset-0 bg-[#0E1524]/85 backdrop-blur-sm z-0"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -879,71 +879,17 @@
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-brand-500/10 to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
                     </div>
-                    <form id="contact-form" class="relative z-10 space-y-6">
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- 회사명 -->
-                            <div class="space-y-2">
-                                <label class="text-sm font-semibold text-slate-300 pl-1">회사명 <span
-                                        class="text-brand-400">*</span></label>
-                                <input type="text" id="inquiry-company" required
-                                    class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
-                                    placeholder="회사명 입력">
-                            </div>
-                            <!-- 담당자 -->
-                            <div class="space-y-2">
-                                <label class="text-sm font-semibold text-slate-300 pl-1">담당자 성함 <span
-                                        class="text-brand-400">*</span></label>
-                                <input type="text" id="inquiry-name" required
-                                    class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
-                                    placeholder="담당자 성함 입력">
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- 연락처 -->
-                            <div class="space-y-2">
-                                <label class="text-sm font-semibold text-slate-300 pl-1">연락처 <span
-                                        class="text-brand-400">*</span></label>
-                                <input type="tel" id="inquiry-phone" required
-                                    class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
-                                    placeholder="010-0000-0000">
-                            </div>
-                            <!-- 이메일 -->
-                            <div class="space-y-2">
-                                <label class="text-sm font-semibold text-slate-300 pl-1">이메일 <span
-                                        class="text-brand-400">*</span></label>
-                                <input type="email" id="inquiry-email" required
-                                    class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
-                                    placeholder="예: user@company.com">
-                            </div>
-                        </div>
-
-                        <!-- 내용 -->
-                        <div class="space-y-2">
-                            <label class="text-sm font-semibold text-slate-300 pl-1">문의 내용</label>
-                            <textarea id="inquiry-content" rows="4"
-                                class="w-full px-5 py-4 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all resize-none font-light"
-                                placeholder="현재 현장 규모나 개선하길 원하시는 내용을 자유롭게 작성해 주시면, 더욱 상세하고 정확한 맞춤 상담이 가능합니다."></textarea>
-                        </div>
-
-                        <!-- 동의 -->
-                        <div class="pt-2">
-                            <label class="inline-flex items-center gap-3 cursor-pointer group/agree">
-                                <input type="checkbox" required
-                                    class="w-5 h-5 rounded border-white/20 bg-dark-bg/50 text-brand-500 focus:ring-brand-500 focus:ring-offset-dark-bg transition-colors">
-                                <span
-                                    class="text-sm text-slate-400 group-hover/agree:text-slate-200 transition-colors">개인정보
-                                    수집 및 이용에 동의합니다. <span class="text-brand-400">*</span></span>
-                            </label>
-                        </div>
-
-                        <!-- 제출 버튼 -->
-                        <button type="submit"
-                            class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 text-white font-bold text-lg shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 active:scale-95 flex justify-center items-center gap-2">
-                            <iconify-icon icon="solar:plain-2-bold" class="text-xl"></iconify-icon> 도입 문의 시작하기
-                        </button>
-                    </form>
+                    <div class="relative z-10 flex flex-col items-center justify-center pt-8 pb-4">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScyg_PqzG8CQ5bpr_Sz0QwFOefEsS98ldDRkfJcO0eBuEU55Q/viewform"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full py-5 rounded-2xl bg-gradient-to-r from-brand-600 to-brand-500 text-white font-bold text-xl shadow-[0_0_30px_rgba(34,197,94,0.3)] hover:shadow-[0_0_40px_rgba(34,197,94,0.5)] transition-all duration-300 transform hover:-translate-y-2 active:scale-95 flex justify-center items-center gap-3">
+                            <iconify-icon icon="solar:clipboard-text-bold-duotone" class="text-3xl"></iconify-icon> 도입
+                            문의 시작하기 (구글 폼)
+                        </a>
+                        <p class="text-slate-400 text-sm mt-6 text-center leading-relaxed">
+                            작성해주신 소중한 정보를 바탕으로<br>최고 전문가가 신속하고 완벽한 도입 방안을 안내해 드립니다.
+                        </p>
+                    </div>
                 </div>
             </div>
 
