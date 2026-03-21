@@ -1,12 +1,25 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EASY SAFE - 복잡한 현장 안전, 말로 편하게 하세요</title>
+    <title>이지세이프(EASY SAFE) | 스마트 안전보건관리 시스템 - 중대재해처벌법/EHS 플랫폼</title>
+    <meta name="description"
+        content="사업주는 EASY하게, 근로자는 SAFE하게. 스마트 안전관리 및 EHS 플랫폼 이지세이프. 중대재해처벌법·산업안전보건법·건설기술진흥법 법적 의무를 디지털 전환(DX)으로 100% 충족하세요.">
+    <meta name="keywords"
+        content="안전보건관리 시스템, 중대재해처벌법 대응, 스마트 안전관리, EHS 플랫폼, 위험성 평가 프로그램, TBM 작업 전 안전점검, 디지털 안전보건, 산업안전보건법 솔루션, 건설현장 안전관리 앱, 이지세이프, EASY SAFE, 보이스 입력 안전관리, 시니어 친화 안전시스템, 세이프티웍스, safetyworks">
 
-    <meta name="description" content="사업주는 EASY하게, 근로자는 SAFE하게. 복잡한 서류 작업과 빈틈없는 법령 준수는 이지세이프 웍스가 다 해드립니다!">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="이지세이프(EASY SAFE) | 안전보건관리 시스템">
+    <meta property="og:description" content="사업주는 EASY하게, 근로자는 SAFE하게. 모바일 하나로 법적 의무 100% 충족.">
+    <meta property="og:url" content="https://www.easysafe.co.kr">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="이지세이프(EASY SAFE) | 안전보건관리 시스템">
+    <meta name="twitter:description" content="사업주는 EASY하게, 근로자는 SAFE하게. 모바일 하나로 법적 의무 100% 충족.">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,6 +30,31 @@
 
     <!-- Iconify Solar & MDI -->
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.easysafe.co.kr/resources/main/images/favicon.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "이지세이프 (EASY SAFE)",
+    "applicationCategory": "BusinessApplication",
+    "description": "안전보건관리 시스템 - 중대재해처벌법·산업안전보건법·건설기술진흥법 완벽 대응. 모바일 점검, 보이스 입력, 전자서명, 보고서 자동 생성.",
+    "operatingSystem": "Web, iOS, Android",
+    "offers": {
+        "@type": "Offer",
+        "description": "무료 상담 및 맞춤 견적 제공"
+    },
+    "provider": {
+        "@type": "Organization",
+        "name": "ZEONS",
+        "telephone": "070-8811-8880",
+        "email": "sales@zeons.co.kr"
+    }
+    }
+    </script>
 
     <script>
         tailwind.config = {
@@ -54,7 +92,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="bg-dark-bg text-slate-200 font-sans selection:bg-brand-500/30">
+<body class="bg-dark-bg text-slate-200 font-sans selection:bg-brand-500/30 overflow-x-hidden w-full relative">
 
     <div class="ambient-glow"></div>
     <div class="ambient-glow right"></div>
@@ -67,8 +105,9 @@
         <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
             <a href="#features" class="hover:text-white transition-colors">스마트 도구</a>
             <a href="#compliance" class="hover:text-white transition-colors">법적 의무</a>
-            <a href="#functions" class="hover:text-white transition-colors">주요 기능</a>
+            <a href="#functions" class="hover:text-white transition-colors">핵심 기능</a>
             <a href="#cases" class="hover:text-white transition-colors">도입 사례</a>
+            <a href="#target" class="hover:text-white transition-colors">도입 대상</a>
             <a href="#onboarding" class="hover:text-white transition-colors">도입 절차</a>
         </div>
         <div class="flex items-center gap-3 ml-auto">
@@ -84,68 +123,77 @@
     </nav>
 
     <!-- Hero Section -->
-    <main
-        class="relative w-full min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 pt-32 pb-20">
-        <div class="lg:w-1/2 z-10 space-y-8 fade-up mt-10 lg:mt-0">
-            <div
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-500/30 text-brand-400 text-sm font-semibold">
-                <span class="relative flex h-3 w-3">
-                    <span
-                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-500"></span>
-                </span>
-                스마트 안전관리 솔루션
-            </div>
-
-            <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight">
-                사업주는 <span class="text-gradient">EASY</span>하게,<br>
-                근로자는 <span class="text-gradient">SAFE</span>하게
-            </h1>
-
-            <p class="text-lg lg:text-xl text-slate-400 leading-relaxed max-w-xl">
-                현장 안전, 말로 하세요. 나머지는 이지세이프가.<br>
-                <span class="text-white font-medium">중대재해처벌법 · 산업안전보건법 · 건설기술진흥법</span> —<br>모바일 하나로 법적 의무 100% 충족
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                <div class="flex flex-col gap-2">
-                    <div class="flex flex-col sm:flex-row gap-4 w-full">
-                        <a href="https://apps.apple.com/kr/app/easy-safe/id6751828220" target="_blank"
-                            class="flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white text-[#0B0F19] font-bold text-lg hover:bg-brand-50 transition-all duration-300 transform hover:-translate-y-1 shadow-xl hover:shadow-brand-500/20 active:scale-95 w-full sm:w-auto min-w-[200px]">
-                            <iconify-icon icon="mdi:apple" class="text-2xl"></iconify-icon>
-                            App Store
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=co.kr.safetyworks.m&pli=1"
-                            target="_blank"
-                            class="flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white/10 text-white font-bold text-lg hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-md border border-white/10 shadow-xl active:scale-95 w-full sm:w-auto min-w-[200px]">
-                            <iconify-icon icon="mdi:google-play" class="text-2xl"></iconify-icon>
-                            Google Play
-                        </a>
-                    </div>
-                    <p class="text-sm text-slate-400 text-center sm:text-left mt-2 pl-2">앱스토어, 구글플레이에서 "이지세이프"로 검색하세요
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="lg:w-1/2 relative z-10 mt-16 lg:mt-0 fade-up delay-200 perspective-1000">
-            <div
-                class="relative w-full max-w-lg mx-auto transform transition-transform duration-700 hover:rotate-y-12 hover:rotate-x-12">
+    <main class="relative w-full min-h-screen flex items-center pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-6 w-full flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div class="lg:w-1/2 z-10 space-y-8 fade-up mt-10 lg:mt-0">
                 <div
-                    class="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-blue-500/20 rounded-3xl blur-2xl transform scale-105">
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-500/30 text-brand-400 text-sm font-semibold">
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-500"></span>
+                    </span>
+                    스마트 안전관리 솔루션
                 </div>
-                <img src="assets/images/hero.png" alt="이지세이프 모바일 앱 시연"
-                    class="relative w-full h-auto rounded-3xl shadow-2xl shadow-brand-500/10 border border-white/10 object-cover">
+
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight">
+                    사업주는 <span class="text-gradient">EASY</span>하게,<br>
+                    근로자는 <span class="text-gradient">SAFE</span>하게
+                </h1>
+
+                <p class="text-lg lg:text-xl text-slate-400 leading-relaxed max-w-xl">
+                    현장 안전, 말로 하세요. 나머지는 이지세이프가.<br>
+                    <span class="text-white font-medium">중대재해처벌법 · 산업안전보건법 · 건설기술진흥법</span> —<br>모바일 하나로 법적 의무 100% 충족
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-col sm:flex-row gap-4 w-full">
+                            <a href="https://apps.apple.com/kr/app/easy-safe/id6751828220" target="_blank"
+                                class="flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white text-[#0B0F19] font-bold text-lg hover:bg-brand-50 transition-all duration-300 transform hover:-translate-y-1 shadow-xl hover:shadow-brand-500/20 active:scale-95 w-full sm:w-auto min-w-[200px]">
+                                <iconify-icon icon="mdi:apple" class="text-2xl"></iconify-icon>
+                                App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=co.kr.safetyworks.m&pli=1"
+                                target="_blank"
+                                class="flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white/10 text-white font-bold text-lg hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-md border border-white/10 shadow-xl active:scale-95 w-full sm:w-auto min-w-[200px]">
+                                <iconify-icon icon="mdi:google-play" class="text-2xl"></iconify-icon>
+                                Google Play
+                            </a>
+                        </div>
+                        <p
+                            class="text-sm text-slate-400 text-center sm:text-left mt-2 flex items-center justify-center sm:justify-start gap-1.5 break-keep">
+                            <iconify-icon icon="solar:magnifer-linear"
+                                class="text-brand-400 text-base shrink-0 mt-0.5"></iconify-icon>
+                            앱스토어, 구글플레이에서 <strong class="text-brand-400 font-bold">"이지세이프"</strong>로 검색하세요
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 relative z-10 mt-16 lg:mt-0 fade-up delay-200 perspective-1000">
+                <div
+                    class="relative w-full max-w-lg mx-auto transform transition-transform duration-700 hover:rotate-y-12 hover:rotate-x-12">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-blue-500/20 rounded-3xl blur-2xl transform scale-105">
+                    </div>
+                    <img src="assets/images/hero.png" alt="이지세이프 모바일 앱 시연"
+                        class="relative w-full h-auto rounded-3xl shadow-2xl shadow-brand-500/10 border border-white/10 object-cover">
+                </div>
             </div>
         </div>
     </main>
 
     <!-- Features Section (Smart Tools) -->
-    <section id="features" class="w-full bg-[#0E1524] py-32 relative border-y border-white/5">
+    <section id="features" class="w-full py-32 relative border-y border-white/5 bg-cover bg-center bg-fixed"
+        style="background-image: url('assets/images/mobile_app.png');">
+        <!-- Dark overlay to ensure text readability -->
+        <div class="absolute inset-0 bg-[#0E1524]/85 backdrop-blur-sm z-0"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-20 space-y-4 fade-up">
                 <h2 class="text-brand-400 font-bold tracking-widest text-sm uppercase">Smart Tools</h2>
-                <h3 class="text-4xl md:text-5xl font-bold">오직 현장을 위해, 스마트하게</h3>
+                <h3 class="text-4xl md:text-5xl font-bold">오직 현장을 위해,</h3>
+                <h3 class="text-4xl md:text-5xl font-bold">모바일 앱으로 스마트하게</h3>
                 <p class="text-slate-400 max-w-2xl mx-auto text-lg">기존 앱의 복잡함을 덜어내고, 누구나 쉽게 사용할 수 있는 스마트 도구를 제공합니다.</p>
             </div>
 
@@ -315,99 +363,149 @@
         <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent pointer-events-none z-0"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-20 fade-up">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-500/30 text-brand-400 text-sm font-semibold mb-4">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-500/30 text-brand-400 text-sm font-semibold mb-4">
                     ✨ 핵심 기능
                 </div>
                 <h3 class="text-4xl md:text-5xl font-bold mb-4">누구나 쉽게, 현장에서 바로</h3>
-                <p class="text-slate-400 text-lg max-w-2xl mx-auto break-keep">Simple, Smart and Solve — 복잡한 안전관리를 8가지 핵심 기능으로 간단하게 해결합니다.</p>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto break-keep">Simple, Smart and Solve — 복잡한 안전관리를 8가지
+                    핵심 기능으로 간단하게 해결합니다.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- 1. 모바일 점검 -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-100 group border border-white/5 hover:border-brand-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-brand-400 text-4xl shadow-inner border border-white/10 group-hover:bg-brand-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-100 group border border-white/5 hover:border-brand-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-brand-400 text-4xl shadow-inner border border-white/10 group-hover:bg-brand-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--
                         <iconify-icon icon="solar:smartphone-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">📱</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">모바일 점검</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">현장에서 바로 찍고, 보고, 등록과 검수까지 스마트폰 하나로 끝내세요.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">현장에서 바로 찍고, 보고, 등록과 검수까지 스마트폰 하나로
+                            끝내세요.</p>
                     </div>
                 </div>
 
                 <!-- 2. 시니어 맞춤 UI -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-200 group border border-white/5 hover:border-blue-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-blue-400 text-4xl shadow-inner border border-white/10 group-hover:bg-blue-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-200 group border border-white/5 hover:border-blue-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-blue-400 text-4xl shadow-inner border border-white/10 group-hover:bg-blue-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--
                         <iconify-icon icon="solar:smartphone-update-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">👓</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">시니어 맞춤 UI</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">큰 버튼으로 돋보기 없이 누구나 편하게 사용할 수 있는 직관적 화면.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">큰 버튼으로 돋보기 없이 누구나 편하게 사용할 수 있는 직관적
+                            화면.</p>
                     </div>
                 </div>
 
                 <!-- 3. 보이스 입력 -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-300 group border border-white/5 hover:border-purple-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-purple-400 text-4xl shadow-inner border border-white/10 group-hover:bg-purple-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-300 group border border-white/5 hover:border-purple-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-purple-400 text-4xl shadow-inner border border-white/10 group-hover:bg-purple-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--
                         <iconify-icon icon="solar:microphone-3-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">🎙️</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">보이스 입력</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">타자가 어려운 현장직을 위해 음성으로 현장 상황을 바로 기록합니다.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">타자가 어려운 현장직을 위해 음성으로 현장 상황을 바로
+                            기록합니다.</p>
                     </div>
                 </div>
 
                 <!-- 4. 미니게임 컨디션 체크 -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-400 group border border-white/5 hover:border-orange-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-orange-400 text-4xl shadow-inner border border-white/10 group-hover:bg-orange-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-400 group border border-white/5 hover:border-orange-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-orange-400 text-4xl shadow-inner border border-white/10 group-hover:bg-orange-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--
                         <iconify-icon icon="solar:gamepad-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">🕹️</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">컨디션 체크</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">게임으로 건강 확인! 작업자 컨디션을 매일 쉽게 체크합니다.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">게임으로 건강 확인! 작업자 컨디션을 매일 쉽게 체크합니다.
+                        </p>
                     </div>
                 </div>
 
                 <!-- 5. 보고서 자동 생성 -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-100 group border border-white/5 hover:border-teal-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-teal-400 text-4xl shadow-inner border border-white/10 group-hover:bg-teal-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-100 group border border-white/5 hover:border-teal-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-teal-400 text-4xl shadow-inner border border-white/10 group-hover:bg-teal-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--    
                         <iconify-icon icon="solar:document-text-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">📜️</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">보고서 자동 생성</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">현장 데이터만 입력하세요! 위험성 평가, TBM 결과까지 이지세이프가 자동 문서화합니다.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">현장 데이터만 입력하세요! 위험성 평가, TBM 결과까지
+                            이지세이프가 자동 문서화합니다.</p>
                     </div>
                 </div>
 
                 <!-- 6. 모바일 전자서명 -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-200 group border border-white/5 hover:border-yellow-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-yellow-400 text-4xl shadow-inner border border-white/10 group-hover:bg-yellow-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-200 group border border-white/5 hover:border-yellow-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-yellow-400 text-4xl shadow-inner border border-white/10 group-hover:bg-yellow-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--
                         <iconify-icon icon="solar:pen-new-square-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">✍️</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">모바일 전자서명</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">스마트폰에 쓱, 법적 효력 완성! 언제 어디서나 법정 보존문서에 서명하세요.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">스마트폰에 쓱, 법적 효력 완성! 언제 어디서나 법정 보존문서에
+                            서명하세요.</p>
                     </div>
                 </div>
 
                 <!-- 7. 카카오 알림톡 -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-300 group border border-white/5 hover:border-pink-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-pink-400 text-4xl shadow-inner border border-white/10 group-hover:bg-pink-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-300 group border border-white/5 hover:border-pink-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-pink-400 text-4xl shadow-inner border border-white/10 group-hover:bg-pink-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--
                         <iconify-icon icon="solar:chat-round-dots-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">💬</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">카카오 알림톡</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">단 하나의 업무 누락도 차단! 알림톡으로 현장에 공유되는 실시간 안전업무.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">단 하나의 업무 누락도 차단! 알림톡으로 현장에 공유되는 실시간
+                            안전업무.</p>
                     </div>
                 </div>
 
                 <!-- 8. TAG 공유 -->
-                <div class="glass-card p-8 flex flex-col gap-6 fade-up delay-400 group border border-white/5 hover:border-red-500/50 transition-colors">
-                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-red-400 text-4xl shadow-inner border border-white/10 group-hover:bg-red-500/10 group-hover:scale-110 transition-all duration-300">
+                <div
+                    class="glass-card p-8 flex flex-col gap-6 fade-up delay-400 group border border-white/5 hover:border-red-500/50 transition-colors">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-red-400 text-4xl shadow-inner border border-white/10 group-hover:bg-red-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--        
                         <iconify-icon icon="solar:tag-bold-duotone"></iconify-icon>
+                        -->
+                        <span class="my-emoji">🏷️</span>
                     </div>
                     <div>
                         <h4 class="text-xl font-bold text-white mb-3">TAG 공유</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed break-keep">부서 간 위험 상황을 즉시 공유! 태그(`@`) 한 번으로 직관적으로 해당 부서에 전파됩니다.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed break-keep">일상 점검 내용을 태그(`#`) 기능을 사용해서 부서간 즉시
+                            공유! 작업관리에 공유됩니다.</p>
                     </div>
                 </div>
             </div>
@@ -545,6 +643,97 @@
         </div>
         </div>
     </section>
+
+    <!-- ════════ Target Audience Section ════════ -->
+    <section id="target" class="w-full relative py-20 border-t border-white/5 bg-[#0B0F19] overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-900/10 to-transparent pointer-events-none z-0"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 fade-up">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-500/30 text-brand-400 text-sm font-semibold mb-4">
+                    🎯 도입 대상
+                </div>
+                <h3 class="text-4xl md:text-5xl font-bold mb-4">우리 회사도 해당될까?</h3>
+                <p class="text-slate-400 text-lg">이런 현장이라면 이지세이프가 딱 맞습니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="glass-card p-8 flex flex-col gap-3 fade-up delay-100 group border border-white/5 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-brand-400 text-3xl shadow-inner border border-white/10 group-hover:bg-brand-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--    <iconify-icon icon="solar:buildings-2-bold-duotone"></iconify-icon>-->
+                        <span class="my-emoji">🏢</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-3">빌딩·아파트 관리</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed break-keep">중소형 빌딩과 아파트 관리소의<br>안전점검을 모바일로 간편하게</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="glass-card p-8 flex flex-col gap-3 fade-up delay-200 group border border-white/5 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-blue-400 text-3xl shadow-inner border border-white/10 group-hover:bg-blue-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--<iconify-icon icon="solar:danger-triangle-bold-duotone"></iconify-icon>-->
+                        <span class="my-emoji">🚧</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-3">건설 현장</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed break-keep">공사금액 50억 미만 현장도 포함<br>건설기술진흥법 완벽 대응</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="glass-card p-8 flex flex-col gap-3 fade-up delay-300 group border border-white/5 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-purple-400 text-3xl shadow-inner border border-white/10 group-hover:bg-purple-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--<iconify-icon icon="solar:settings-bold-duotone"></iconify-icon>-->
+                        <span class="my-emoji">🏭</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-3">제조·시설 관리</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed break-keep">공장, 물류센터 등 현장 중심<br>근로자가 많은 사업장에 최적</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="glass-card p-8 flex flex-col gap-3 fade-up delay-100 group border border-white/5 hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-orange-400 text-3xl shadow-inner border border-white/10 group-hover:bg-orange-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--<iconify-icon icon="solar:users-group-two-rounded-bold-duotone"></iconify-icon>-->
+                        <span class="my-emoji">👷</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-3">5인 이상 사업장</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed break-keep">2024년 1월 중대재해처벌법<br>확대 적용 사업장 필수 대응</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="glass-card p-8 flex flex-col gap-3 fade-up delay-200 group border border-white/5 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-yellow-400 text-3xl shadow-inner border border-white/10 group-hover:bg-yellow-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--<iconify-icon icon="solar:handshake-bold-duotone"></iconify-icon>-->
+                        <span class="my-emoji">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-3">원청-하청 통합 관리</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed break-keep">협력업체까지 하나의 시스템으로<br>묶어 도급사 책임 철저 방어</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="glass-card p-8 flex flex-col gap-3 fade-up delay-300 group border border-white/5 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-teal-400 text-3xl shadow-inner border border-white/10 group-hover:bg-teal-500/10 group-hover:scale-110 transition-all duration-300">
+                        <!--<iconify-icon icon="solar:global-bold-duotone"></iconify-icon>-->
+                        <span class="my-emoji">👴</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-3">시니어·외국인 근로자</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed break-keep">보이스 텍스트 변환, 큰 글자 UI로<br>누구나 쉽게 참여
+                        가능합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Onboarding Section -->
     <section id="onboarding"
@@ -690,15 +879,14 @@
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-brand-500/10 to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
                     </div>
-                    <form class="relative z-10 space-y-6"
-                        onsubmit="event.preventDefault(); alert('도입 문의가 접수되었습니다. 당사 전문가가 기재해주신 연락처로 곧 연락드리겠습니다.');">
+                    <form id="contact-form" class="relative z-10 space-y-6">
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- 회사명 -->
                             <div class="space-y-2">
                                 <label class="text-sm font-semibold text-slate-300 pl-1">회사명 <span
                                         class="text-brand-400">*</span></label>
-                                <input type="text" required
+                                <input type="text" id="inquiry-company" required
                                     class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
                                     placeholder="회사명 입력">
                             </div>
@@ -706,7 +894,7 @@
                             <div class="space-y-2">
                                 <label class="text-sm font-semibold text-slate-300 pl-1">담당자 성함 <span
                                         class="text-brand-400">*</span></label>
-                                <input type="text" required
+                                <input type="text" id="inquiry-name" required
                                     class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
                                     placeholder="담당자 성함 입력">
                             </div>
@@ -717,7 +905,7 @@
                             <div class="space-y-2">
                                 <label class="text-sm font-semibold text-slate-300 pl-1">연락처 <span
                                         class="text-brand-400">*</span></label>
-                                <input type="tel" required
+                                <input type="tel" id="inquiry-phone" required
                                     class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
                                     placeholder="010-0000-0000">
                             </div>
@@ -725,7 +913,7 @@
                             <div class="space-y-2">
                                 <label class="text-sm font-semibold text-slate-300 pl-1">이메일 <span
                                         class="text-brand-400">*</span></label>
-                                <input type="email" required
+                                <input type="email" id="inquiry-email" required
                                     class="w-full px-5 py-3.5 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-light"
                                     placeholder="예: user@company.com">
                             </div>
@@ -734,7 +922,7 @@
                         <!-- 내용 -->
                         <div class="space-y-2">
                             <label class="text-sm font-semibold text-slate-300 pl-1">문의 내용</label>
-                            <textarea rows="4"
+                            <textarea id="inquiry-content" rows="4"
                                 class="w-full px-5 py-4 rounded-xl bg-dark-bg/60 border border-white/10 text-white placeholder-slate-500/70 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all resize-none font-light"
                                 placeholder="현재 현장 규모나 개선하길 원하시는 내용을 자유롭게 작성해 주시면, 더욱 상세하고 정확한 맞춤 상담이 가능합니다."></textarea>
                         </div>

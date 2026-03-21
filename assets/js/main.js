@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     // 1. 스크롤 등장 애니메이션 (Intersection Observer)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -86,6 +86,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+    }
+
+    // 6. 도입 문의 폼 이메일 전송 로직
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const company = document.getElementById('inquiry-company')?.value || '';
+            const name = document.getElementById('inquiry-name')?.value || '';
+            const phone = document.getElementById('inquiry-phone')?.value || '';
+            const email = document.getElementById('inquiry-email')?.value || '';
+            const content = document.getElementById('inquiry-content')?.value || '';
+            
+            const subject = encodeURIComponent(`[도입 문의] ${company} - ${name}님의 문의입니다.`);
+            const body = encodeURIComponent(`회사명: ${company}\n담당자 성함: ${name}\n연락처: ${phone}\n이메일: ${email}\n\n문의 내용:\n${content}`);
+            
+            window.location.href = `mailto:sales@zeons.co.kr?subject=${subject}&body=${body}`;
         });
     }
 });

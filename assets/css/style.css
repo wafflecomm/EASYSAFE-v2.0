@@ -1,7 +1,14 @@
 body {
     word-break: keep-all;
-    background-color: #0B0F19; /* Deep dark background */
+    background-color: #0B0F19;
+    /* Deep dark background */
     color: #F8FAFC;
+}
+
+/* Emoji */
+.my-emoji {
+    /* font-size: 50px; */
+    /* 크기 크게 */
 }
 
 /* Glassmorphism utility */
@@ -18,14 +25,14 @@ body {
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-top: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
     border-radius: 1.5rem;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
 }
 
 .glass-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 30px 60px rgba(34, 197, 94, 0.15), inset 0 1px 0 rgba(255,255,255,0.1);
+    box-shadow: 0 30px 60px rgba(34, 197, 94, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
@@ -48,7 +55,7 @@ body {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(34,197,94,0.15) 0%, rgba(0,0,0,0) 70%);
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
     top: -200px;
     left: -200px;
     z-index: -1;
@@ -59,7 +66,7 @@ body {
     top: 40%;
     left: auto;
     right: -300px;
-    background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, rgba(0,0,0,0) 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
 /* Text Gradient */
@@ -78,23 +85,44 @@ body {
     top: 96px;
     bottom: -24px;
     width: 2px;
-    background: linear-gradient(to bottom, #22c55e, rgba(34,197,94,0.1));
+    background: linear-gradient(to bottom, #22c55e, rgba(34, 197, 94, 0.1));
     z-index: 0;
 }
+
 .step-item:last-child .step-line::before {
     display: none;
 }
 
 /* Animations */
 @keyframes fadeUpAnim {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 .fade-up {
     animation: fadeUpAnim 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     opacity: 0;
 }
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
+
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+.delay-400 {
+    animation-delay: 400ms;
+}
