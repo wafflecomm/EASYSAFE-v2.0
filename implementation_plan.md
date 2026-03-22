@@ -1,7 +1,6 @@
 # 이지세이프(EASY SAFE) 랜딩페이지 구현 계획
 
 Supanova 디자인 스타일(Tailwind CSS, 글래스모피즘, Pretendard 폰트, Iconify Solar 아이콘 기반)을 사용하여 이지세이프의 프리미엄 랜딩페이지를 제작합니다.
-Supanova 디자인 스킬 깃헙(GitHub) 주소: https://github.com/uxjoseph/supanova-design-skill
 
 ## User Review Required
 
